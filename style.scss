@@ -1,0 +1,138 @@
+$font: "Karla", sans-serif;
+$cyan: hsl(179, 62%, 43%);
+$lightCyan: hsl(179, 47%, 52%);
+$yellow: hsl(71, 73%, 54%);
+$lightGray: hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
+
+body {
+  font-family: $font;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: $lightGray;
+  color: white;
+
+  font-weight: 400;
+  margin: 0;
+}
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  animation: fadeInUp;
+  animation-duration: 2s;
+  overflow: hidden;
+}
+.joinSection {
+  background-color: white;
+  padding: 32px;
+  margin: 0;
+}
+.bottomSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+}
+.headerText {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: $cyan;
+}
+.mainText {
+  font-size: 16px;
+  color: $yellow;
+}
+.descrtiptionText {
+  color: $grayishBlue;
+  width: 462px;
+  margin: 0;
+}
+.signUpSection {
+  background-color: $cyan;
+  margin: 0;
+  padding: 32px;
+}
+.subscriptionText {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+span {
+  font-size: 28px;
+  font-weight: 600;
+  margin-right: 13px;
+}
+.priceText {
+  margin: 0 0 8px 0;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.accessText {
+  margin: 0 0 24px 0;
+}
+.signUpButton {
+  background-color: $yellow;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 14px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  margin: 0;
+  width: 100%;
+  transition: all 1s;
+}
+.signUpButton:hover {
+  transform: scale(1.05);
+  filter: brightness(95%);
+}
+a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+.whyUsSection {
+  background-color: $lightCyan;
+  padding: 32px;
+}
+h2 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+@media (max-width: 600px) {
+  .mainWrapper {
+    flex-direction: column;
+    width: 312px;
+  }
+  .bottomSection {
+    grid-template-columns: 1fr;
+  }
+  .descrtiptionText {
+    width: auto;
+  }
+}
+
+@media (max-width: 350px) {
+  .mainWrapper {
+    flex-direction: column;
+    width: 270px;
+  }
+}
