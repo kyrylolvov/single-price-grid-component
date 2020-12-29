@@ -1,0 +1,181 @@
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e5eff5;
+  color: white;
+  font-weight: 400;
+  margin: 0;
+}
+
+.mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  overflow: hidden;
+}
+
+.joinSection {
+  background-color: white;
+  padding: 32px;
+  margin: 0;
+}
+
+.bottomSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 0;
+}
+
+.headerText {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: #2ab2af;
+}
+
+.mainText {
+  font-size: 16px;
+  color: #c0df34;
+}
+
+.descrtiptionText {
+  color: #98a6bd;
+  width: 462px;
+  margin: 0;
+}
+
+.signUpSection {
+  background-color: #2ab2af;
+  margin: 0;
+  padding: 32px;
+}
+
+.subscriptionText {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+span {
+  font-size: 28px;
+  font-weight: 600;
+  margin-right: 13px;
+}
+
+.priceText {
+  margin: 0 0 8px 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+.accessText {
+  margin: 0 0 24px 0;
+}
+
+.signUpButton {
+  background-color: #c0df34;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 14px;
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  margin: 0;
+  width: 100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.signUpButton:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+}
+
+a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.whyUsSection {
+  background-color: #4bbebc;
+  padding: 32px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .mainWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 312px;
+  }
+  .bottomSection {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .descrtiptionText {
+    width: auto;
+  }
+}
+
+@media (max-width: 350px) {
+  .mainWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 270px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
