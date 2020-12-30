@@ -16,7 +16,6 @@ body {
   color: white;
   font-weight: 400;
   margin: 0;
-  padding: 70px 0;
 }
 
 .mainWrapper {
@@ -160,6 +159,9 @@ li {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 312px;
+  }
+  body{
+      padding: 70px 0;
   }
   .bottomSection {
     -ms-grid-columns: 1fr;
